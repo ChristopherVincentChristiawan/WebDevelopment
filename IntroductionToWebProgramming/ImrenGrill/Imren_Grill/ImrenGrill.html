@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imren Grill</title>
+    <link type="text/css" rel="stylesheet" href="UAS_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+ <div class="restaurant">
+     <div class="Imren_Grill">
+         <div class="header">
+             <p class="header">
+                Imren Grill <br/>
+                 Karl-Marx-Straße 75, 12043 Berlin, Germany
+             </p>
+         </div>
+
+         <div class="kasir">
+             <p> <b> Kasir </b> </p>
+             <table class="kasir" id="table">
+                 <tr class="kasir">
+                     <th class="kasir"> No. </th>
+                     <th class="kasir">Daftar Pesanan</th>
+                     <th class="kasir">Jumlah</th>
+                     <th class="kasir">Total</th>
+                 </tr>
+<!--                 <tr>-->
+<!--                     <td> </td>-->
+<!--                     <td> </td>-->
+<!--                     <td> </td>-->
+<!--                     <td> </td>-->
+<!--                 </tr>-->
+             </table>
+
+             <label class="totalbayar"> Total Bayar :  </label>
+             <label class="angka_total" id="total"> </label>
+<!--             <table>-->
+<!--                 <tr>-->
+<!--                     <td> </td>-->
+<!--                     <td> </td>-->
+<!--                     <td> Total Bayar </td>-->
+<!--                     <td id="total"> </td>-->
+<!--                 </tr>-->
+
+<!--             </table>-->
+
+             <p class="note"> Pesanan sudah selesai? Tekan <i> enter </i> untuk menghitung total. </p>
+             <div class="entries">
+                 <div class="clock_division">
+                    <span class="clock" id="clock"> </span>
+                 </div>
+
+                 <div class="input_division">
+                     <label class="nama"> Nama Makanan: </label>
+                     <input class="nama" type="text" id="nama" /> <br/>
+
+                     <label class="harga"> Harga Satuan: </label>
+                     <input class="harga" type="number" id="harga" /> <br/>
+
+                     <label class="jumlah"> Jumlah: </label>
+                     <input class="jumlah" type="number" id="jumlah" /> <br/>
+
+                     <button id="apply" class="enter"> Enter </button>
+                     <button id="laporan" class="input"> Checkout </button>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+
+
+     <div class="Laporan_Keuangan">
+         <div class="header">
+             <p class="header">
+                Laporan Keuangan <br/>
+                 <span class="date" id="displaydate"> </span>
+             </p>
+         </div>
+         <div class="calculation">
+             <p> <b>Total Pemasukan:</b> <label class="empty_space1" id="empty_space1"> 0 </label> </p> <br/>
+             <p> <b>Transfer bank:</b> <label class="empty_space2" id="empty_space2"> 0 </label> </p> <br/>
+             <p> <b>Cash:</b> <label class="empty_space3" id="empty_space3"> 0 </label> </p> <br/>
+             <p> <b>Daftar pembelian harian:</b> </p> <br/>
+             <button class="setor" id="setor"> Setor ke bank 1 juta </button>
+
+             <table class="pemasukan" id="pemasukan">
+                 <tr class="pemasukan">
+                     <th class="pemasukan"> No </th>
+                     <th class="pemasukan"> Jam </th>
+                     <th class="pemasukan"> Menu </th>
+                     <th class="pemasukan"> Total </th>
+                 </tr>
+             </table>
+
+         </div>
+
+     </div>
+ </div>
+<script src="ImrenGrillJS.js"></script>
+</body>
+</html>
